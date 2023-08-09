@@ -20,31 +20,34 @@ update, and delete key-value data.
 
 ==> Getting Started
 
-(A) Inviroment Setup
+(A) Environment Setup
 
 1. Clone the repository:
    --> git clone https://github.com/sonuprasad66/DPDzero.git
-   --> cd DPDzero
 
-2. Install dependencies:
+    --> cd DPDzero
+
+3. Install dependencies:
    --> npm install
 
-3. Set up MongoDB:
+4. Set up MongoDB:
    --> Make sure you have MongoDB installed and running locally.
 
 (B) Program run setup
 
 1. Create a .env file in the root directory with your MongoDB connection URL:
    --> MONGO_URL="mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.y60kxun.mongodb.net/DPDzero?retryWrites=true&w=majority"
-   --> SECRET_KEY="DPDzero"
-   --> PORT="8080"
 
-2. Add start script in package.json
+    --> SECRET_KEY="DPDzero"
 
-3. Start the server:
+    --> PORT="8080"
+
+3. Add start script in package.json
+
+4. Start the server:
    --> npm start
 
-4. The API server will start on http://localhost:8080.
+5. The API server will start on http://localhost:8080.
 
 ==> API Documentation
 --> The API provides the following endpoints:
