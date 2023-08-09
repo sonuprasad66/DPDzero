@@ -90,17 +90,17 @@ update, and delete key-value data.
   "value": "data_value"
   }
 
-- GET /api/data/:key: Retrieve data (requires authentication).
+- GET /api/data/:key : Retrieve data (requires authentication).
 
   --> Pass data key from the params.
 
-- PUT /api/data/:key: Update data (requires authentication).
+- PUT /api/data/:key : Update data (requires authentication).
 
   --> Pass data key from the params.
 
-  --> Pass data value from the body
+  --> Pass data values from the body
 
-- DELETE /api/data/:key: Delete data (requires authentication).
+- DELETE /api/data/:key : Delete data (requires authentication).
 
   --> Pass data key from the params.
 
