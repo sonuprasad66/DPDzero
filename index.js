@@ -9,7 +9,9 @@ const { userRouter } = require("./Routes/UserRoute");
 const { dataRouter } = require("./Routes/DataRoute");
 
 app.get("/", (req, res) => {
-  res.send("Welcome To HomePage");
+  res.send(
+    "Welcome To HomePage  And for another request you can check from POSTMAN or THUNDER_CLIENT, etc"
+  );
 });
 app.use(cors());
 app.use(express.json());

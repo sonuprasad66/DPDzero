@@ -20,17 +20,20 @@ update, and delete key-value data.
 
 ==> Getting Started
 
+- Onlive server you can go with this API.
+  --> https://dpdzero.onrender.com/
+
 (A) Environment Setup
 
 1. Clone the repository:
    --> git clone https://github.com/sonuprasad66/DPDzero.git
 
-    --> cd DPDzero
+   --> cd DPDzero
 
-3. Install dependencies:
+2. Install dependencies:
    --> npm install
 
-4. Set up MongoDB:
+3. Set up MongoDB:
    --> Make sure you have MongoDB installed and running locally.
 
 (B) Program run setup
@@ -39,23 +42,27 @@ update, and delete key-value data.
 
    --> MONGO_URL="mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.y60kxun.mongodb.net/DPDzero?retryWrites=true&w=majority"
 
-    --> SECRET_KEY="DPDzero"
+   --> SECRET_KEY="DPDzero"
 
-    --> PORT="8080"
+   --> PORT="8080"
 
-3. Add a start script to the package.json
+2. Add a start script to the package.json
 
-4. Start the server:
+3. Start the server:
    --> npm start
 
-5. The API server will start on http://localhost:8080.
+4. The API server will start on http://localhost:8080.
 
 ==> API Documentation
+
 --> The API provides the following endpoints:
+
 --> For the authentication pass the Bearer token from the headers.
 
 - POST /api/register: Register a new user.
+
   --> Pass user registration data from the body
+
   Example:- {
   "username": "example_user",
   "email": "user@example.com",
@@ -66,29 +73,38 @@ update, and delete key-value data.
   }
 
 - POST /api/token: Generate an access token.
+
   --> Pass user credentials data from the body.
+
   Example:- {
   "username": "example_user",
   "password": "secure_password123",
   }
 
 - POST /api/data: Store data (requires authentication).
+
   --> Pass data from the body.
+
   Example:- {
   "key": "unique_key",
   "value": "data_value"
   }
 
 - GET /api/data/:key: Retrieve data (requires authentication).
+
   --> Pass data key from the params.
 
 - PUT /api/data/:key: Update data (requires authentication).
+
   --> Pass data key from the params.
+
   --> Pass data value from the body
 
 - DELETE /api/data/:key: Delete data (requires authentication).
+
   --> Pass data key from the params.
 
 ==> Contributing
+
 --> Contributions are welcome! If you find any issues or have suggestions for improvements,
 feel free to create a pull request or submit an issue.
