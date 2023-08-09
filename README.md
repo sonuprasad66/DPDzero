@@ -1,11 +1,11 @@
 ==> User Registration API
 
---> A Node.js backend system with API endpoints for user registration, token generation, and data management.
+--> A Node.js backend system with API endpoints for user registration, token generation, and data management
 
 ==> Introduction
 
---> The User Registration API is a backend system that provides a set of API endpoints for user registration,
-token generation, and data management. It allows users to register, generate access tokens, store, retrieve,
+--> The User Registration API is a backend system that provides a set of API endpoints for user registration.
+token generation, and data management. It allows users to register, generate access tokens, and store, retrieve,
 update, and delete key-value data.
 
 ==> Technologies Used
@@ -16,7 +16,7 @@ update, and delete key-value data.
 - Mongoose (Connecting Database)
 - Bcrypt (Password hashing)
 - Jsonwebtoken (Generate a token)
-- Dotenv (Hide the secret data like: MONGO_URL, SECRET_KEY, etc)
+- Dotenv (Hide the secret data like MONGO_URL, SECRET_KEY, etc)
 
 ==> Getting Started
 
@@ -36,13 +36,14 @@ update, and delete key-value data.
 (B) Program run setup
 
 1. Create a .env file in the root directory with your MongoDB connection URL:
+
    --> MONGO_URL="mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.y60kxun.mongodb.net/DPDzero?retryWrites=true&w=majority"
 
     --> SECRET_KEY="DPDzero"
 
     --> PORT="8080"
 
-3. Add start script in package.json
+3. Add a start script to the package.json
 
 4. Start the server:
    --> npm start
